@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+h1 { 
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 40px;
+    user-select: none;
+}
+
+#love {
+    padding-bottom: 10px;
+}
+
+.form__input {
+    font-size: 18px;
+    padding: 8px 12px;
+    outline: none;
+}
+
+.form__group {
+    margin-bottom: 10px;
+}
+
+.form__controls {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.form__controls label {
+    background-color: #eee;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #666;
+    border-radius: 2px;
+    user-select: none;
+}
+
+.form__controls label:hover {
+    opacity: 0.9;
+}
+
+.btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#message_score__text {
+    font-size: 30px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-width: 300px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn ease-in 0.1s;
+    display: none;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .auth-form {
+    margin: auto;
+    z-index: 2;
+    animation: growth linear 0.1s;
+  }
+
+  .auth-form__container {
+      min-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 4px;
+      position: relative;
+  }
+
+  .auth-form__alter-title {
+      font-size: 2rem;
+  }
+
+  .auth-form__header {
+      margin-bottom: 20px;
+  }
+
+  .auth-form__form {
+      font-size: 1.6rem;
+  }
+
+  .auth-form__group {
+      margin-bottom: 20px;
+  }
+
+  .auth-form__group input {
+      font-size: 1.6rem;
+      padding: 8px;
+      outline: none;
+      border: 1px solid #777;
+  }
+
+  .edit-checkbox:checked + .modal {
+    display: flex;
+  }
+
+  .bars-close {
+      position: absolute;
+      top: 6px;
+      right: 24px;
+      width: 6px;
+      height: 6px;
+      cursor: pointer;
+  }
+
+  .bars-close i {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    z-index: 10;
+  }
+
+

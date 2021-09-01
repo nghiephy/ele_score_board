@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elephant ScoreBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Elephant ScoreBoard</h1>
+    <img src="./logo_crop_removebg.png" alt="">
+    <p id="love">❤️❤️Love baby elephant so much!❤️❤️</p>
+    <div class="form__container">
+        <div class="form__form">
+            <div class="form__group">
+                <input type="text" class="form__input" id="name" placeholder="Tên học phần">
+            </div>
+            <div class="form__group">
+                <input type="number" class="form__input" id="credits" placeholder="Số chỉ">
+            </div>
+            <div class="form__group">
+                <input type="float" class="form__input" id="score" placeholder="Số điểm thang 4">
+            </div>
+        </div>
+
+        <div class="form__controls">
+            <button onclick="calculator()" class="btn">THÊM</button>
+            <label for="edit-checkbox" class="btn">SỬA</label>
+            <button onclick="remove()" class="btn">XÓA</button>
+        </div>
+    </div>
+
+    <div class="message_score">
+        <h2>Điểm trung bình tích lũy: </h2>
+        <span id="message_score__text" >2.22</span>
+    </div>
+
+    <table id="score-board">
+        <tr>
+            <th>STT</th>
+            <th>Tên HP</th>
+            <th>Tín chỉ</th>
+            <th>Điểm</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hóa thực phẩm</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Hóa thực phẩm</td>
+            <td>2</td>
+            <td>3</td>
+            </tr>
+    </table>
+
+    <input type="checkbox" hidden name="" id="edit-checkbox" class="edit-checkbox">
+    <div class="modal">
+
+        <label for="edit-checkbox" class="overlay"></label>
+    
+        <div class="auth-form">
+            <div class="auth-form__container">
+                <label for="edit-checkbox" class="bars-close">
+                    <i class="fas fa-times"></i>
+                </label>
+
+                <div class="auth-form__header">
+                    <span class="auth-form__alter-title">Sửa Điểm</span>
+                </div>
+    
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input-order" placeholder="Nhập STT nha zk">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input-credits" placeholder="Nhập số chỉ ">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="fext" class="auth-form__input-score" placeholder="Nhập điểm mới nha zk">
+                    </div>
+                </div>
+    
+                <div class="auth-form__controls">
+                    <button onclick="alter()" class="btn btn--primary">SỬA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+
+    <script src="./main.js"></script>
+</body>
+</html>
