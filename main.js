@@ -13,7 +13,7 @@ courses = [
     {  name: "Cơ sở văn hóa Việt Nam", credits: 2, score: 2.5},
     {  name: "Tư tưởng Hồ Chí Minh", credits: 2, score: 2.5},
     {  name: "Hóa lý 1", credits: 3, score: 1},
-    {  name: "Hóa Hữu cơ 1", credits: 3, score: 1},
+    {  name: "Hóa Hữu cơ 1", credits: 3, score: 2.5},
     {  name: "TT. Hóa Hữu cơ 1", credits: 1, score: 3},
     {  name: "Hóa phân tích 1", credits: 3, score: 2},
     {  name: "TT. Hóa Vô cơ 1 ", credits: 1, score: 2},
@@ -43,6 +43,9 @@ courses = [
     {  name: "Hóa sinh học", credits: 3, score: 3.5},
     {  name: "Hóa hữu cơ -2", credits: 3, score: 3.5},
     {  name: "Các phương pháp thống kê hóa học", credits: 2, score: 2},
+    {  name: "điểm A hk1", credits: 9, score: 4},
+    {  name: "điểm B hk1", credits: 2, score: 3},
+    {  name: "điểm Dp hk1", credits: 3, score: 1.5},
 ]
 
 var scoreBoard = document.querySelector('#score-board')
