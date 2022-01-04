@@ -55,6 +55,7 @@ var scoreInput = document.querySelector('#score');
 var displayScore = document.querySelector('#message_score__text')
 
 loadCourses()
+calculator()
 
 function calScore() {
     var totalScore=0
